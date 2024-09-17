@@ -1,0 +1,15 @@
+#navbar {
+    height: 70px;
+    background: rgba(50, 50, 50, .95);
+    position: fixed;
+    border-bottom: solid 1px rgba(0, 0, 0, .1);
+    z-index: 1000;
+    width: 100%;
+    transition: .5s;
+    outline: none;
+}
+
+.transparent {
+    background: rgba(0, 0, 0, 0.0);
+}
+

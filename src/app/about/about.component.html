@@ -1,0 +1,10 @@
+<div class="p-grid">
+    <div class="col-12">
+        <p-carousel [value]="artworks" [numVisible]="3" [numScroll]="3" [circular]="true">
+            <ng-template let-artwork pTemplate="item">
+                <img src="{{artwork.image}}" [alt]="artwork.title" style="width:80%" />
+                <p>{{ artwork.title }}</p>
+            </ng-template>
+        </p-carousel>
+    </div>
+</div>

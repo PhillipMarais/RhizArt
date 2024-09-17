@@ -1,0 +1,10 @@
+app-navbar{
+    display: block;
+    left: 0;
+    right: 0;
+    z-index: 12;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}

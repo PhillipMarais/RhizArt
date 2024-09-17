@@ -1,0 +1,17 @@
+
+  .content {
+    position: relative;
+    z-index: 1; /* Puts content on top of the particles */
+    text-align: center;
+    color: white;
+    padding-top: 150px;
+  }
+  
+  h1 {
+    font-size: 8rem;
+    margin: 0;
+  }
+  
+  p {
+    font-size: 1.5rem;
+  }

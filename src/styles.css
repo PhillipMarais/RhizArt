@@ -32,4 +32,23 @@ html, body {
     --primary-color: #50a99f !important;
     --text-color: #d8f5f2 !important; 
     --primary-color-text: #80afaa !important;
+    overflow-x: hidden  ;
   }
+
+  /* Full scrollbar track */
+::-webkit-scrollbar {
+  width: 12px;  /* Width of the entire scrollbar */
+}
+
+/* The scrollbar "thumb" (the scrollable part) */
+::-webkit-scrollbar-thumb {
+  background-color: #56d5c7;  /* Scrollbar color */
+  border-radius: 10px;        /* Rounded corners */
+  border: 3px solid #fff;     /* Padding around the thumb */
+}
+
+/* The part of the track that isn’t the thumb */
+::-webkit-scrollbar-track {
+  background:rgba(255,0,0,0.1) !important; /* Color of the scrollbar track */
+  border-radius: 10px;
+}

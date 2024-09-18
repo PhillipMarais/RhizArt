@@ -1,25 +1,12 @@
-<!-- <p-menubar id="navbar">
-    <ul>
-      <li><a routerLink="/">Home</a></li>
-      <li><a routerLink="/gallery">Gallery</a></li>
-      <li><a routerLink="/about">About</a></li>
-      <li><a routerLink="/contact">Contact</a></li>
-    </ul>
-  </p-menubar> -->
-
-  <header style="background: rgba(0, 0, 0, 0.0);">
-    <div class="container">
-      <div class="row"> 
-        <div class="col-md-12">
-          <nav>
+<header [ngClass]="{'scrolled': isScrolled, 'transparent': !isScrolled}">
+        <nav id="navbar">
+          <div class="container">
             <ul>
-              <li><a routerLink="/">Home</a></li>
-              <li><a routerLink="/gallery">Gallery</a></li>
-              <li><a routerLink="/about">About</a></li>
-              <li><a routerLink="/contact">Contact</a></li>
+              <li><a routerLink="/">SHOWCASE</a></li>
+              <li><a routerLink="/gallery">GALLERY</a></li>
+              <li><a routerLink="/about">ABOUT</a></li>
+              <li><a routerLink="/contact">CONTACT</a></li>
             </ul>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </header>
+          </div>
+        </nav>
+</header>

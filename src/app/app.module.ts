@@ -9,6 +9,10 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AboutComponent } from './about/about.component';
+import { ScrollTopModule } from 'primeng/scrolltop';
+import { ImageModule } from 'primeng/image';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FieldsetModule } from 'primeng/fieldset';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,11 @@ import { AboutComponent } from './about/about.component';
     BrowserModule,  // Import BrowserModule
     CarouselModule,
     MenubarModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ScrollTopModule,
+    ImageModule,
+    BrowserAnimationsModule,
+    FieldsetModule
   ],
   providers: [],
   bootstrap: [AppComponent]

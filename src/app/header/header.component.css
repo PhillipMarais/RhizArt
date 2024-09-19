@@ -48,8 +48,8 @@ h1 {
   font-size: 12rem;
 
   b {
-
-    color: #56d5c7;
+    text-shadow: 0 0 12px black;
+    color: #50a99f;
     font-family: 'primeicons';
     font-size: 15rem;
   }
@@ -60,7 +60,7 @@ h2 {
   font-family: cursive;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 5px solid #56d5c7 !important;
+  border-right: 5px solid #50a99f !important;
   animation: blinkCursor 0.8s steps(1) infinite;
   width: fit-content;
 }
@@ -75,6 +75,7 @@ h2 {
 }
 
 .fab {
+  text-shadow: 0 0 12px black;
   font-size: xx-large;
   margin: 1rem;
 }

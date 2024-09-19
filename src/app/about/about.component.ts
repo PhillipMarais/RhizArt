@@ -6,13 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './about.component.css'
 })
 export class AboutComponent {
-  artworks = [
-    { title: 'test 1 ', image: 'assets/artworks/Art-1.jpg' },
-    { title: 'test 2 ', image: 'assets/artworks/Art-1.jpg' },
-    { title: 'test 3 ', image: 'assets/artworks/Art-1.jpg' },
-    { title: 'test 3 ', image: 'assets/artworks/Art-1.jpg' },
-    { title: 'test 3 ', image: 'assets/artworks/Art-1.jpg' },
-    { title: 'test 3 ', image: 'assets/artworks/Art-1.jpg' },
-    { title: 'test 3 ', image: 'assets/artworks/Art-1.jpg' },
-  ];
+  
 }

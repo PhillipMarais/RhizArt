@@ -15,3 +15,204 @@
   p {
     font-size: 1.5rem;
   }
+
+  header {
+    height: 70px;
+    text-align: center;
+    color: #50a99f;
+    font-family: fangsong;
+    font-size: xx-large;
+  }
+
+  /* Style for the image thumbnails */
+  .gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+/* Initially hide the modal with opacity 0 and scaled down */
+.preview-img {
+  max-width: 100%;
+  max-height: 90%;  /* Adjust the height to fit the content */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;  /* Add space between the title and image */
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.image-preview {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);  /* Dark overlay */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;  /* Align content to the top */
+  z-index: 1000;
+  opacity: 0;  /* Initially hidden */
+  visibility: hidden;  /* Prevent clicks when hidden */
+  transition: opacity 0.3s ease;  /* Smooth transition for overlay */
+  padding-top: 50px;  /* Add space at the top of the modal */
+}
+
+/* This class will be added when the modal is open */
+.image-preview.show {
+  opacity: 1;
+  visibility: visible;  /* Show modal */
+}
+
+.image-preview.show .preview-img {
+  opacity: 1;
+  transform: scale(1);  /* Restore image to full size */
+}
+
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.caption {
+  color: white;
+  margin-top: 10px;
+  font-size: x-large;
+  font-family: fangsong;
+  text-align: center;
+}
+
+.image-container:hover .carousel-image {
+  opacity: 0.3;
+}
+
+.image-container:hover .hover-overlay {
+  opacity: 1;
+}
+
+.artwork-title {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.artwork-item {
+  position: relative;
+  text-align: center;
+  padding: 1rem;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;    
+  box-shadow: 0px 0px 12px #ff6900 !important
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+  transition: opacity 0.3s ease-in-out;
+  display: block;
+  border-radius: 8px;
+}
+
+.hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 145, 0, 0.6); /* Darken effect */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.hover-overlay i {
+  color: white;
+  font-size: 2rem;
+}
+
+header{
+  border: 3px solid #ff6b02;
+  border-radius: 10px;
+  padding: 12px;
+  background-color: whitesmoke;
+  box-shadow: 0px 0px 12px #ff6b02;
+  text-shadow: 0px 0px 5px #ff6b02;
+  color: #ff6b02
+}
+
+::ng-deep legend{
+  font-family: fangsong;
+  border-radius: 10px !important;
+  padding: 12px !important;
+  color: #ff6b02;
+  background-color: whitesmoke !important;
+  box-shadow: 0px 0px 12px #ff6b02  !important;
+  text-shadow: 0px 0px 4px #ff6b02  !important;
+}
+
+::ng-deep fieldset {
+  text-align: center;
+  border-radius: 10px !important;
+  padding: 12px !important;
+  background-color: whitesmoke !important;
+  box-shadow: 0px 0px 12px #ff6b02  !important;
+  border: 2px solid #ff6b02;
+}
+
+h1 {
+  text-align: center;
+  margin: 0;
+  position: relative;
+}
+
+.text-with-line {
+  background: whitesmoke;
+  border-radius: 5px;
+  z-index: 1000;
+  box-shadow: 0 0 10px #ff7800;
+  position: relative !important;
+}
+
+
+.title-with-line {
+  background: whitesmoke;
+  color: #ff6b02;
+  border-radius: 5px;
+  z-index: 1000;
+  box-shadow: 0 0 10px #ff6b02;
+  padding: 5px;
+  position: relative !important;
+}
+
+.header-hr {
+  border: none;
+  margin: -37px 0 20px;
+  border-top: 0.01px solid #ff6b024d;
+  box-shadow: 0px 0px 20px #ff6b02  !important;
+}
+
+.title-hr {
+  border: none;
+  margin: -29px 0 20px;
+  border-top: 0.01px solid #ff6b02;
+  box-shadow: 0px 0px 20px #ff6b02  !important;
+}

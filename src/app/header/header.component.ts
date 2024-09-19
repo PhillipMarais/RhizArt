@@ -82,13 +82,13 @@ export class HeaderComponent implements OnInit {
             value: 15
           },
           color: {
-            value: "#56d5c7"
+            value: "#50a99f"
           },
           links: {
             enable: true,
             distance: 550,
             color: {
-              value: "#56d5c7"
+              value: "#50a99f"
             },
           },
           shape: {

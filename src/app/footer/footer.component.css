@@ -1,0 +1,48 @@
+#footer {
+    position: fixed;      /* Fixes the footer to the bottom of the viewport */
+    bottom: 0;            /* Aligns the footer to the bottom */
+    width: 100%;          /* Makes the footer span the entire width of the page */
+    text-align: center;   /* Center the text */
+    height: 70px;
+    z-index: 1000;        /* Ensure the footer stays on top of other content */
+}
+
+
+.transparent {
+    background: rgba(0, 0, 0, 0);  
+    transition: background-color 0.5s ease, border-bottom 0.5s ease, margin-top 0.5s ease; ;  
+    margin-top: 20px;
+
+    p {
+        
+        color: white !important;
+    }
+
+    .social-icons{
+        a {
+        
+            color: white !important;
+        }
+    }
+}
+
+
+.scrolled {
+    color: #1e1e1e;  
+    background: white;
+    border-bottom: solid 1px rgba(0, 0, 0, .2);  
+    transition: background-color 0.5s ease, border-bottom 0.5s ease, margin-top 0.5s ease;  
+    margin-top: 0px;
+}
+
+a {
+    color: #ff7800;
+    font-size: larger;
+    margin-right: 10px;
+}
+
+p {
+    margin-bottom: 10px;
+    font-family: fangsong;
+    color: #ff7800;
+}

@@ -1,10 +1,12 @@
 <app-navbar></app-navbar>
 <div *ngIf="isDesktop">
   <app-header></app-header>
-</div><div *ngIf="!isDesktop">
+</div>
+<div *ngIf="!isDesktop">
   <app-header></app-header>
 </div>
-<main>
+<main style="
+  border-top: 10px solid #50a99f; background-color: #50a99fab;">
   <app-home></app-home>  <!-- Main content goes here -->
   <app-about></app-about>
 </main>

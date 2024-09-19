@@ -42,7 +42,7 @@ html, body {
 
 /* The scrollbar "thumb" (the scrollable part) */
 ::-webkit-scrollbar-thumb {
-  background-color: #56d5c7;  /* Scrollbar color */
+  background-color: #50a99f;  /* Scrollbar color */
   border-radius: 10px;        /* Rounded corners */
   border: 3px solid #fff;     /* Padding around the thumb */
 }
@@ -52,3 +52,4 @@ html, body {
   background:rgba(255,0,0,0.1) !important; /* Color of the scrollbar track */
   border-radius: 10px;
 }
+

@@ -18,16 +18,7 @@
             <p-fieldset legend="Most Recent Artworks">
                 <p-carousel [value]="artworks" [numVisible]="3" [numScroll]="3" [circular]="true">
                     <ng-template pTemplate="item" let-artwork>
-                        <div class="artwork-item">
-                          <!-- Image container with hover effect -->
-                          <div class="image-container">
-                            <img [src]="artwork.image" [alt]="artwork.title" class="carousel-image">
-                            <!-- Eye icon that will appear on hover -->
-                            <div class="hover-overlay" (click)="openPreview(artwork)">
-                              <i class="fas fa-eye"></i>
-                            </div>
-                          </div>
-                          <div class="grid">
+                        <div class="grid">
                             <div class="col-12">
                                 <div class="artwork-title">
                                     <span class="title-with-line">
@@ -43,6 +34,15 @@
                             <div class="col-1">
                             </div>
                         </div>
+                        <div class="artwork-item">
+                          <!-- Image container with hover effect -->
+                          <div class="image-container">
+                            <img [src]="artwork.image" [alt]="artwork.title" class="carousel-image">
+                            <!-- Eye icon that will appear on hover -->
+                            <div class="hover-overlay" (click)="openPreview(artwork)">
+                              <i class="fas fa-eye"></i>
+                            </div>
+                          </div>
                         </div>
                       </ng-template>
                 </p-carousel>

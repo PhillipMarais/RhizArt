@@ -8,7 +8,6 @@
         li {
             margin: 25px;
             a{
-                text-shadow: 0 0 12px black;
                 color: white;
                 font-family: fangsong;
                 font-size: x-large;
@@ -22,6 +21,7 @@
 }
 
 .transparent {
+    text-shadow: 0 0 6px black;
     background: rgba(0, 0, 0, 0);  
     transition: background-color 0.5s ease, border-bottom 0.5s ease, margin-top 0.5s ease; ;  
     margin-top: 20px;

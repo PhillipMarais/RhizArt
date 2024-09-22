@@ -187,7 +187,6 @@ h1 {
 .text-with-line {
   background: whitesmoke;
   border-radius: 5px;
-  z-index: 1000;
   box-shadow: 0 0 10px #ff7800;
   position: relative !important;
 }

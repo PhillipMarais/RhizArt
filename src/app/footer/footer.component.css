@@ -12,7 +12,7 @@
     background: rgba(0, 0, 0, 0);  
     transition: background-color 0.5s ease, border-bottom 0.5s ease, margin-top 0.5s ease; ;  
     margin-top: 20px;
-
+    text-shadow: 0 0 6px black;
     p {
         
         color: white !important;

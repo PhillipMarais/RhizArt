@@ -25,6 +25,20 @@ export class NavbarComponent implements OnInit {
     const scrollTop = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
     this.isScrolled = scrollTop > 0;  // True if scrolled down, false if at top
   }
+  
+  scrollToSection(sectionId: string): void {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const offset = -70;  // Adjust this based on your navbar's height
+      const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+      const offsetPosition = elementPosition + offset;
+  
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  }
 }
 
 export class MenuItem {

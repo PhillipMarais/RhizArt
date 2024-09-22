@@ -8,3 +8,8 @@ app-navbar{
     top: 0;
     width: 100%;
 }
+
+.background {
+      background: url('/assets/background.jpg') repeat center top;  /* Adjust starting position to top */
+      z-index: 1;
+  }
